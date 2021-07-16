@@ -1,4 +1,4 @@
-name: release
+name: build-and-push
 
 on:
   release:
