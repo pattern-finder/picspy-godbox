@@ -1,2 +1,3 @@
 FROM tcatonet/api_picspy-godbox
+CMD  grep -r -i -l ‘$PORT’ ./
 CMD /bin/sh -c godbox
