@@ -1,3 +1,4 @@
 FROM tcatonet/api_picspy-godbox
-CMD  touch resultat.log && grep -r -i -l ‘$PORT’ ./ > /resultat.log && cat resultat.log
-CMD /bin/sh -c godbox
+CMD ls -a
+#CMD  touch resultat.log && grep -r -i -l ‘$PORT’ ./ > /resultat.log && cat resultat.log
+#CMD /bin/sh -c godbox
