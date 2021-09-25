@@ -8,7 +8,8 @@ FROM tcatonet/api_picspy-godbox
 #RUN find / -name "*nginx."
 #RUN grep -rnw 'etc' -e 'pub struct ValidationErrorDTO {'
 #RUN grep -r 'PORT' -l --null . | xargs -0 sed -i 's#PORT#$PORT#g'
-#CMD /bin/sh -c godbox
+
+CMD /bin/sh -c grep\ -r\ \'PORT\'\ -l\ --null\ .\ \|\ xargs\ -0\ sed\ -i\ \'s\#PORT\#\$PORT\#g\'
 
 #CMD adduser -D root
 #USER root
