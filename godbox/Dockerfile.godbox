@@ -1,6 +1,6 @@
 FROM tcatonet/api_picspy-godbox
 
 
-RUN ["find / -name main.rs"]
+RUN find / -name main.rs
 
-#CMD /bin/sh -c godbox
+CMD /bin/sh -c godbox
