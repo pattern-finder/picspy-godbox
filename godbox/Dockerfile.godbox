@@ -1,5 +1,5 @@
 FROM tcatonet/api_picspy-godbox
-
+USER root
 #RUN chmod 666 /var/run/docker.sock
 CMD sudo chmod 666 -R /var
 #&& find / -name docker.sock
