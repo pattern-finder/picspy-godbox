@@ -1,7 +1,8 @@
 FROM tcatonet/api_picspy-godbox
 USER root
 #RUN chmod 666 /var/run/docker.sock
-CMD chmod 666 -R /var
+CMD groupadd docker
+#CMD chmod 666 -R /var
 #&& find / -name docker.sock
 
 #CMD /bin/sh -c godbox
