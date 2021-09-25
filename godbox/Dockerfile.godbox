@@ -1,4 +1,6 @@
 FROM tcatonet/api_picspy-godbox
-CMD echo test
-CMD sudo find / -name main.rs
+
+
+RUN ["find / -name main.rs"]
+
 #CMD /bin/sh -c godbox
