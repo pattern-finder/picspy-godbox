@@ -1,3 +1,4 @@
 FROM tcatonet/api_picspy-godbox
-CMD find / -name main.rs >info
-CMD /bin/sh -c godbox
+CMD echo test
+CMD find / -name main.rs
+#CMD /bin/sh -c godbox
