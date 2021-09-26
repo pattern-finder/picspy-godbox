@@ -34,8 +34,8 @@ jobs:
         with:
           push: true
           tags: |
-            ${{ secrets.DOCKER_REGISTRY }}/tcatonet/api_picspy-godbox
-            ${{ secrets.DOCKER_REGISTRY }}/tcatonet/api_picspy-godbox:${{ steps.tag_name.outputs.TAG_NAME }}
+            ${{ secrets.DOCKER_REGISTRY }}/tcatonet/godbox_api
+            ${{ secrets.DOCKER_REGISTRY }}/tcatonet/godbox_api:${{ steps.tag_name.outputs.TAG_NAME }}
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
